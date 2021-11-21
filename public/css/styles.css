@@ -1,6 +1,6 @@
 html {
   background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-image: -webkit-linear-gradient(35deg, #77A1D3, #79CBCA, #E684AE);
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
@@ -13,13 +13,13 @@ h1 {
 .box {
   max-width: 400px;
   margin: 50px auto;
-  background: white;
   border-radius: 5px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.822);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
 }
 
 #heading {
-  background-color: #A683E3;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@ h1 {
   min-height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid white;
 }
 
 .item:last-child {
@@ -59,13 +59,16 @@ form.item {
 button {
   min-height: 50px;
   width: 50px;
-  border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
+  background-color: #19a5e1;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
-  border-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.822);
 }
 
 input[type="text"] {
